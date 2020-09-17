@@ -1,0 +1,17 @@
+body,footer {
+    
+
+    font-family: 'Sriracha', cursive;
+    }
+    
+    #orderNumber_placer {
+        width: 200px;
+        height: 30px;
+        background-color: lightyellow;
+      }
+  
+      #order_placer {
+        width: 800px;
+        height: 250px;
+        background-color: lightyellow;
+      }
