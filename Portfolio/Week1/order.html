@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Order Taker</title>
+  <script>
+    function myFunction() {
+      var x = Math.floor((Math.random() * 10000) + 1);
+      document.getElementById("demo").innerHTML = x;
+    }
+
+    function saveOrder() {
+      var orderName = document.getElementById("orderNumber_placer").value
+      var orderContent = document.getElementById("order_placer").value
+      localStorage.setItem(orderName, orderContent)
+    }
+
+    function loadOrder() {
+      var orderName = document.getElementById("orderNumber_placer").value
+      var orderSummary = localStorage.getItem(orderName)
+      document.getElementById("display").innerHTML = orderSummary
+    }
+  </script>
+
+  <style>
+    #orderNumber_placer {
+      width: 200px;
+      height: 30px;
+      background-color: lightyellow;
+    }
+
+    #order_placer {
+      width: 800px;
+      height: 250px;
+      background-color: lightyellow;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Cayanan's Pizza. Best Pizza in town!</h1>
+
+  <button onclick="myFunction()">Generate Order ID</button>
+  <button onclick="saveOrder()">Submit Order</button>
+  <button onclick="loadOrder()">Load Order</button>
+
+  <p id="demo"></p>
+  <textarea id="orderNumber_placer" placeholder="Put your order number here."></textarea> <br>
+  <textarea id="order_placer" placeholder="Put your order here."></textarea>
+
+  <p>Your order is:</p>
+  <p id="display"></p>
+</body>
+
+</html>
