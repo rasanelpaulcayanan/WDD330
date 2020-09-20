@@ -1,7 +1,9 @@
 var links = [
     {
         label:'Week 1',    
-        link:'https://github.com/rasanelpaulcayanan/WDD330/tree/master/Portfolio/Week1'
+        link:'Week1/index.html'
     }
 ]
 document.getElementById("dynamicContent").innerHTML = links[0].label;
+document.getElementById("dynamicContent2").href = links[0].link;
+
