@@ -6,7 +6,7 @@ const links = [
 ,
     {
         label:'Week 2',    
-        link:'Week2/rainbow.html'
+        link:'Week2/index.html'
     }
 ]
 
@@ -25,7 +25,6 @@ const links = [
        a.innerHTML = links[i].label
        ol.appendChild(li);
        li.appendChild(a);
-      
    
    }
    

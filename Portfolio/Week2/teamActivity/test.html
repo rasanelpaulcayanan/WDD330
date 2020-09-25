@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+
+<html lang="en-us">
+
+<head>
+
+<meta charset="utf-8">
+
+ 
+
+<title> Multiplication table using 2 functions  </title>
+
+ 
+
+<script>
+
+ 
+
+/* Input:
+
+* End user inputs two numbers
+
+* Processing:
+
+* The first number is multiplied to 1 until the second number
+
+* Output:
+
+* Shows results, results will look like a multiplication table
+
+
+*/
+
+ 
+
+// This is the firs function
+
+function doInputOutput() {
+
+ 
+
+// This retrieves the 2 numbers that the end user inputs
+
+var firstNum = document.getElementById("inputOne").value;
+
+document.getElementById("outputDiv").innerHTML = result;
+
+}
+
+ 
+
+function validateNumber(one){
+
+var sum = "";
+
+if ( isNaN(one))
+{
+    sum = "this is not a number!"
+    document.getElementById("outputDiv2").innerHTML = sum;
+}
+
+}
+
+
+
+
+// Start of second function
+
+function createTimesTable(multiplier, endNum) {
+
+ 
+
+// Variables are set for the loop
+
+var startNum = 0;
+
+var output = "";
+ 
+var sum = 0;
+// Loop starts here multiplier or firstNum is multiplied by 1 up until endNum
+
+
+for (startNum = 0; startNum <= multiplier; startNum++)
+{
+       sum += startNum;
+}
+document.getElementById("outputDiv3").innerHTML = sum;
+
+//output is returned to the first function
+
+return  output;
+
+ 
+
+}
+
+ 
+
+</script>
+
+ 
+
+</head>
+
+ 
+
+<body>
+
+1st number: <input type="text" id="inputOne">
+
+2nd number: <input type="text" id="inputTwo">
+
+<button type="button" onclick="doInputOutput()">Calculate</button>
+<button type="button" onclick="doInputOutput()">Calculate</button>
+
+ 
+
+<div id="outputDiv"></div>
+
+<div id="outputDiv2"></div>
+<div id="outputDiv3"></div>
+ 
+
+</body>
+
+ 
+
+</html>
