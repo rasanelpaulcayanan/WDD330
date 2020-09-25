@@ -52,5 +52,25 @@ function addNumbers() {
 
 }
 
+function subtractNumbers()
+{
+    var firstNum = parseFloat(document.getElementById("inputOne").value);
+    var secondNum = parseFloat(document.getElementById("inputTwo").value);
+ 
+        var difference = 0;
+        difference = firstNum - secondNum;
+        output = "";
+        if(isNaN(difference))
+        {
+            output = "Please enter valid numbers";
+            document.getElementById("differenceDiv").innerHTML = output;
+
+        }
+        else{
+            document.getElementById("differenceDiv").innerHTML = difference;
+        }
+
+}
+
 var subject = 'WDD330' 
   console.log(`I love love ${subject}.`);
