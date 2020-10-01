@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team 11 | Week 2</title>
 </head>
+
 <body>
-    <input id="inputOne"></input>
-    <button  onclick="display()">Display</button>  
-    <button  onclick="mathLoop()">Add Loop</button>  
-    <div>The number is:</div>
-    <div id="outputDiv">  </div>  
-    ​<div id="user_error"></div> 
-    <input id="inputTwo"></input> 
-    <button  onclick="addNumbers()">Add Numbers</button>
-    <button  onclick="subtractNumbers()">Subtract Numbers</button>
-    
-    <div>The sum for two numbers is:</div> 
-    <div id="sumDiv"></div>
-​<div id="differenceDiv">The difference for two numbers is:</div>
-​
-<script src="js/wk2.js"></script> 
+    <input id="inputOne"></input> <br>
+    <button onclick="display()">Display</button>
+    <button onclick="mathLoop()">Add Loop</button>
+    <div>The number is: <span id="outputDiv"></span></div>
+
+    <input id="inputTwo"></input> <br>
+    <button onclick="getInput(1)">Add (+)</button>
+    <button onclick="getInput(2)">Subtract (-)</button> <br>
+    <button onclick="getInput(3)">Multiply (X)</button>
+    <button onclick="getInput(4)">Divide (/)</button>
+
+    <div>The answer is: <span id="answerDiv"></span></div>
+    <div id="errorDiv"></div>
+    ​
+    <script src="js/wk2.js"></script>
 </body>
+
 </html>
