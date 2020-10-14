@@ -11,7 +11,6 @@ const player1wins = ["X","X","X"];
 const player2wins = ["0","0","0"];
 
 var clickContainter = document.getElementById('board');
-var tile1 = document.getElementById('item1');
 clickContainter.addEventListener("touchend",function1);
 var turns = 0;
 
@@ -29,6 +28,7 @@ tile9 = document.getElementById('item9');
 
 function function1 (event) {
 tile = event.target;
+console.log(tile);
 onclick = turns++;
 
 
