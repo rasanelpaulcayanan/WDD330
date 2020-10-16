@@ -1,0 +1,75 @@
+#container0, #container1, #container2
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    align-items: center;
+    padding: 5%;
+    margin: auto;
+    max-width: 100%;
+}
+
+.image
+{
+    max-width: 75%;
+}
+
+#textcontainer0,#textcontainer1,#textcontainer2
+{
+   font-size: 1.1rem;
+   
+   
+}
+
+  img {
+    max-width: 100%;
+  }
+  body
+  {
+    background-image: url(../images/Hike.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  
+  .hikeStyles
+  {
+    background: #F1F2B5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #135058, #F1F2B5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #135058, #F1F2B5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+max-width: 60%;
+margin: auto;
+font-family: 'Sniglet', cursive;
+
+  }
+
+
+  #headerDiv
+  {
+    background: #DAD299;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #B0DAB9, #DAD299);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #B0DAB9, #DAD299); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+text-align: center;
+border-style: solid;
+max-width: 70%;
+margin: auto;
+font-size: 1.5rem;
+font-family: 'Rye', cursive;
+  }
+
+
+  h2
+  {
+    text-align: center;
+  }
+
+  
+  #h2Div0, #h2Div1, #h2Div2
+  {
+    border: solid;
+    margin: auto;
+    max-width: 60%;
+    font-family: 'Rye', cursive;
+    background: #DAD299;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #B0DAB9, #DAD299);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #B0DAB9, #DAD299); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }

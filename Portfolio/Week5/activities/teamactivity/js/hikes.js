@@ -1,7 +1,7 @@
 // Example of using Classes and modules to organize the code needed to render our list of hikes. Not using MVC here.
 
 //create an array of hikes
-const hikeList = [
+export const hikeList = [
   {
     name: "Bechler Falls",
     imgSrc: "falls.jpg",
@@ -36,7 +36,7 @@ const hikeList = [
   }
 ];
 
-const imgBasePath = "//byui-cit.github.io/cit261/examples/";
+const imgBasePath = "images/";
 //on load grab the array and insert it into the page on load
 
 export default class Hikes {
@@ -46,7 +46,7 @@ export default class Hikes {
     this.backButton = this.buildBackButton();
   }
   // why is this function necessary?  hikeList is not exported, and so it cannot be seen outside of this module. I added this in case I ever need the list of hikes outside of the module. This also sets me up nicely if my data were to move. I can just change this method to the new source and everything will still work if I only access the data through this getter.
-  getAllHikes() {
+ getAllHikes() {
     return hikeList;
   }
   // For the first stretch we will need to get just one hike.
@@ -54,7 +54,14 @@ export default class Hikes {
     return this.getAllHikes().find(hike => hike.name === hikeName);
   }
   //show a list of hikes in the parentElement
-  showHikeList() {}
+  showHikeList() {
+
+     for ( let i = 0; i => hikeList.length; i++)
+     {
+      return this.getAllHikes().find(hike => hike.name === hikeName);
+     }
+
+  }
   // show one hike with full details in the parentElement
   showOneHike(hikeName) {}
   // in order to show the details of a hike ontouchend we will need to attach a listener AFTER the list of hikes has been built. The function below does that.
@@ -90,3 +97,4 @@ function renderOneHikeFull(hike) {
 
   return item;
 }
+
