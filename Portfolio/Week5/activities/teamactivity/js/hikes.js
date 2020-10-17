@@ -4,6 +4,7 @@
 export const hikeList = [
   {
     name: "Bechler Falls",
+    number: 0,
     imgSrc: "falls.jpg",
     imgAlt: "Image of Bechler Falls",
     distance: "3 miles",
@@ -15,6 +16,7 @@ export const hikeList = [
   },
   {
     name: "Teton Canyon",
+    number: 1,
     imgSrc: "falls.jpg",
     imgAlt: "Image of Bechler Falls",
     distance: "3 miles",
@@ -25,6 +27,7 @@ export const hikeList = [
   },
   {
     name: "Denanda Falls",
+    number: 2,
     imgSrc: "falls.jpg",
     imgAlt: "Image of Bechler Falls",
     distance: "7 miles",
@@ -39,7 +42,7 @@ export const hikeList = [
 const imgBasePath = "images/";
 //on load grab the array and insert it into the page on load
 
-export default class Hikes {
+class Hikes {
   constructor(elementId) {
     this.parentElement = document.getElementById(elementId);
     // we need a back button to return back to the list. This will build it and hide it. When we need it we just need to remove the 'hidden' class
@@ -63,11 +66,24 @@ export default class Hikes {
 
   }
   // show one hike with full details in the parentElement
-  showOneHike(hikeName) {}
+  showOneHike(hikeName) 
+  {
+  
+    let oneHike = "";
+     if (hikeName == 0 ) (oneHike = hikeList[0].name); 
+     else if (hikeName == 1 ) (oneHike = hikeList[1].name); 
+     else if (hikeName == 2 ) (oneHike = hikeList[2].name); 
+ 
+    return oneHike;
+  }
   // in order to show the details of a hike ontouchend we will need to attach a listener AFTER the list of hikes has been built. The function below does that.
+  
   addHikeListener() {
     // We need to loop through the children of our list and attach a listener to each, remember though that children is a nodeList...not an array. So in order to use something like a forEach we need to convert it to an array.
+
   }
+
+
   buildBackButton() {
     const backButton = document.createElement("button");
 
@@ -75,21 +91,36 @@ export default class Hikes {
   }
 }
 // methods responsible for building HTML.  Why aren't these in the class?  They don't really need to be, and by moving them outside of the exported class, they cannot be called outside the module...they become private.
-function renderHikeList(parent, hikes) {}
+function renderHikeList(hike) {
+  const item = document.createElement("p");
+  item.innerHTML = ` <div id="h2Div${hike.number}"><h2>${hike.name}</h2></div>
+  </div>`;
+  let list = document.getElementById('hikes');
+ list.appendChild(item);
+  return item;
+
+}
 function renderOneHikeLight(hike) {
-  const item = document.createElement("li");
-  item.innerHTML = ` <h2>${hike.name}</h2>
+  const item = document.createElement("p");
+  item.innerHTML = ` <div id="h2Div${hike.number}"><h2 id="h2${hike.number}">${hike.name}</h2></div>
+  <div id="container${hike.number}">
+
+  
   <div class="image"><img src="${imgBasePath}${hike.imgSrc}" alt="${hike.imgAlt}"></div>
-  <div>
+  
           <div>
+  <div id="textcontainer${hikes.number}">
               <h3>Distance</h3>
               <p>${hike.distance}</p>
-          </div>
-          <div>
               <h3>Difficulty</h3>
               <p>${hike.difficulty}</p>
-          </div>
+              <h3>Description</h3>
+              <p>${hike.description}</p>
+              <h3>Direction</h3>
+              <p>${hike.directions}</p>
   </div>`;
+  let list = document.getElementById('hikes');
+ list.appendChild(item);
   return item;
 }
 function renderOneHikeFull(hike) {
@@ -98,3 +129,4 @@ function renderOneHikeFull(hike) {
   return item;
 }
 
+export {renderHikeList,renderOneHikeLight,renderOneHikeFull,Hikes};
