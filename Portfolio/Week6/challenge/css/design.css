@@ -1,0 +1,167 @@
+body {
+    background-repeat: no-repeat;
+    background: url("../images/backgroundstars.jpg");
+    font-family: 'Henny Penny', cursive;
+  }
+  ::selection {
+    background: transparent;
+  }
+
+  h1,p
+  {
+    background: #fffc00; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fffc00, #ffffff); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fffc00, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+  }
+  .container {
+    position: absolute;
+    height: 25pc;
+    width: 20pc;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 200px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 55px black;
+    text-align: center;
+  }
+
+
+  .container2 {
+    position: absolute;
+    height: 10pc;
+    width: 20pc;
+    margin: auto;
+    top: 400px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 55px black;
+    text-align: center;
+  }
+
+  .container2 h1
+  {
+      font-size: 1.3rem;
+  }
+
+
+  .addTxt {
+    position: absolute;
+    height: 5px;
+    width: 60%;
+    margin: auto;
+    top: 340px;
+    right: 0;
+    left: 0;
+    outline: none;
+    border: none;
+    padding: 20px;
+    padding-right: 50px;
+    font-family: 'Titillium Web', sans-serif;
+  }
+  .addBtn {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    margin: auto;
+    background: transparent;
+    border: none;
+    outline: none;
+    margin: auto;
+    top: 330px;
+    right: 35px;
+    cursor: pointer;
+  }
+  .addBtn img {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    margin: auto;
+    top: 25px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+  .list {
+    position: absolute;
+    height: 75%;
+    width: 100%;
+    margin: auto;
+    top:50px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: 'Titillium Web', sans-serif;
+  }
+  .list::-webkit-scrollbar {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  .tasks {
+    position: relative;
+    height: fit-content;
+    width: 55%;
+    right:-1px;
+    text-align: center;
+    transition: 0.2s;
+    padding: 10px;
+    padding-right: 70px;
+    background: #fff;
+    cursor: pointer;
+    z-index: 4;
+    border-radius: 2px;
+    padding-left: 40px;
+    word-wrap: break-word;
+    font-family: 'Titillium Web', sans-serif;
+  }
+  .tasks .tick {
+    position: absolute;
+    margin: auto;
+    height: 20px;
+    top: 0;
+    bottom: 0;
+    right: 245px;
+    float: right;
+    z-index: +5;
+ 
+  }
+  .tasks .redx {
+    position: absolute;
+    margin: auto;
+    height: 20px; 
+    top: 0;
+    bottom: 0;
+    right: 10px;
+    float: right;
+    z-index: +5;
+
+  }
+  .tasks:hover {
+    transform: scale(1.1);
+  }
+  
+  #selectorList
+  {
+    list-style-type: none;
+      display: flex;
+      justify-content: space-evenly;
+
+  }
+  
+  #selectorList li:hover
+   {
+    background-color: #ddd;
+  }
+  
+  #selectorList liactive {
+    background-color: #4CAF50;
+    color: white;
+  }

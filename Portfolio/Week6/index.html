@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <title> WDD 330 Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css">
+   
+
+</head>
+
+
+
+<body>
+<h1>WDD 330 Portfolio</h1>
+<h2>Week Six</h2>
+
+<h3>Activities</h3>
+
+<ol>
+    <li><a href="challenge/toDoListChallenge.html">To Do List</a></li>
+
+
+ 
+
+</ol>
+
+<h3>Notes/Questions</h3>
+
+<ol>
+    
+<li>
+     <h4>Proper Planning thoughts</h4>
+    <p>
+     I underestimated this challenge. I thought it was easier than it really was. I think I didn't read the instructions <br>
+     as well as I should. I did the div placements first to have the site look at the way it should on the wireframe, <br>
+     initially I was only passing text through the div boxes, which was easy. I didn't realize I need to create an object and <br>
+     an array for the toDoList and toDo which was challenging
+    </p>
+</li>
+<li>
+    <h4>Surprise local storage only takes in text</h4>
+    <p>
+        This was tricky when trying to work on arrays. Since you have an object and array for  the to do list, you can just pass <br>
+        the object and array to local storage. You can, but you wont be able to get anything out of it. So you have use JSON.stringify <br>
+        to convert your array to text, then pass it to local storage. You cant really do anything with a text converted array so you have <br>
+        to bring it back to an array by doing JSON.parse.
+    </p>
+</li>
+<li>
+    <h4>taskList.completed was so much helpful for this program</h4>
+    <p>Another one of my challenges was the check box, it has to be changed when clicked. How do I do that for all the tasks that has already been completed? <br>
+      I created a task called changeImage that runs a loop through all the array items and if they are already completed, it changes the image. The array item <br>
+      is marked completed through the strike function. It underlines the text then marks the Completed variable true instead of the default false. 
+    </p> 
+</li>
+
+<li>
+    <h4>All, Completed and Active</h4>
+    <p>
+        For this ones I just copied the display functions. All pretty much displays everything while for Completed and Active the taskList.completed came in handy again <br>
+        I created loops then a if statement that if completed is true then it displays in completed. if completed is false it displays in the active tab.
+    </p>
+</li>
+
+
+<li>
+    <h4>Why stars?</h4>
+    <p>
+        it's a pun. "Aim for the stars.". Hehe.
+    </p>
+</li>
+
+</ol>
+    <footer>
+        <p>
+            &copy; 2020 | Rasanel Paul Cayanan | Philippines | <a class="link" href="https://www.byui.edu/online">BYU
+                Online Learning</a>
+            
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+<script>
+    WebFont.load({
+        google: {
+            families: [
+                'Sriracha'
+            ]
+        }
+    });
+</script>
+
+
+
+</body>
+
+</html>

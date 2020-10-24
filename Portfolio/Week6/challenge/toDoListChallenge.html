@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/design.css" />
+  </head>
+  <body>
+    <div class="container">
+   <h1>To Do List </h1>
+      <div class="list" id="taskList"></div>
+      <script src="js/toDos.js"></script>
+
+      <input type="text" class="addTxt" placeholder="Add a task here" />
+      <button class="addBtn" onclick="addElement()">
+        <img src="https://picaflor-azul.com/images/plus-circle1.png" />
+      </button>
+    </div>
+
+    <div class="container2">
+      <h1><span id="taskRemaining"></span> Tasks Left </h1>
+      <br>
+   <div id="selector">
+   <ul id="selectorList">
+     <li onclick="showAll()" >  All   </li>
+    <li onclick="showActive()">Active</li>
+    <li onclick="showCompleted()">Completed</li>
+    </ul>
+    </div>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+  <script>
+      WebFont.load({
+          google: {
+              families: [
+                  'Henny Penny','Titillium Web'
+              ]
+          }
+      });
+  </script>
+  
+</html>
