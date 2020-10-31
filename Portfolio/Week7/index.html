@@ -33,15 +33,36 @@
 <ol>
     
 <li>
-     <h4>Proper Planning thoughts</h4>
+     <h4>HTML Troubles</h4>
     <p>
-     I underestimated this challenge. I thought it was easier than it really was. I think I didn't read the instructions <br>
-     as well as I should. I did the div placements first to have the site look at the way it should on the wireframe, <br>
-     initially I was only passing text through the div boxes, which was easy. I didn't realize I need to create an object and <br>
-     an array for the toDoList and toDo which was challenging
+        For the add comment portion, I tried adding it as an appendage to the renderOneHikeFull function in hike.js. <br>
+        It works, it shows a text field for the comment div, an  option selection and a submit button. <br>
+        For some reason the onclick function on the submit button button doesn’t work. It says that the function attached to it isn’t called yet. <br>
+        I think it has something to do with hikes.js just being a module. I tried to import the function for the button but it still doesn’t work.  <br>
+        The solution I came up with is to add another js file (main.js) which was used  as a normal js file. The onlick functionality on the button worked.
+        
     </p>
 </li>
 
+
+<li>
+    <h4>Displaying/Hiding the Add a comment page</h4>
+
+    <p>
+        Since the commentDiv is hard coded in HTML, I used the .style.display option in Javascript. <br>
+        It says “none” when all hikes is displayed and says “block” when the selected hike is displayed.
+    </p>
+</li>
+
+<li>
+    <h4>Filtering the comments</h4>
+    <p>
+        I got help from the renderOneHikeFull function, when that function is called a hike is passed though it.<br>
+     I used that function to call on the Addcomment Function which passes the name of the hike. <br>
+     This is then compared via for and if statements to the array that has all the comments. <br>
+      When the name on the array matches the name of the hike, the right comment is displayed.
+    </p>
+</li>
 
 </ol>
     <footer>
