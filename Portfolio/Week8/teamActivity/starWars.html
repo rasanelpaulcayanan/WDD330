@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Wars API</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+  
+    <div class="container">
+    <div><h1>Star Wars API</h2>
+      <div id="jediList"></div>
+    <div>Page Number <span id="pageNumber"></span></div>
+    </div>
+    <div class="controller">
+<span onclick="addPage()">Next</span> <span onclick="prevPage()">Previous</span> <button></button>
+<span onclick="switchPage(0)">1</span>
+<span onclick="switchPage(1)">2</span>
+<span onclick="switchPage(2)">3</span>
+<span onclick="switchPage(3)">4</span>
+<span onclick="switchPage(4)">5</span>
+<span onclick="switchPage(5)">6</span>
+<span onclick="switchPage(6)">7</span>
+<span onclick="switchPage(7)">8</span>
+<span onclick="switchPage(8)">9</span>
+  </div>
+  </div>
+  </body>
+  <script src="js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  
+  <script>
+      WebFont.load({
+          google: {
+              families: [
+                  'Oswald'
+              ]
+          }
+      });
+  </script>
+  
+</html>
