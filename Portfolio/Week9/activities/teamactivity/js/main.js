@@ -19,6 +19,9 @@ window.addEventListener('keydown', function (keyEvent) {
     sound.play();
     letter.classList.add('playing');
     let reset = false;
+    let count = 0;
+
+
     switch (key) {
         case 65:
             countA++;
@@ -26,6 +29,8 @@ window.addEventListener('keydown', function (keyEvent) {
             if (countA >= 10)
             {countA = 0;
             reset = true;}
+            count = countA;
+            moveDown(reset,letter,count);
             break;
         case 83:
             countS++;
@@ -33,13 +38,17 @@ window.addEventListener('keydown', function (keyEvent) {
             if (countS >= 10)
             {countS = 0;
             reset = true;}
+            count = countS;
+            moveDown(reset,letter,count);
             break;
         case 68:
             countD++;
             counter.innerHTML = countD;
             if (countD >= 10)
-            {countD = 0;
+            {countS = 0;
             reset = true;}
+            count = countD;
+            moveDown(reset,letter,count);
             break;
         case 70:
             countF++;
@@ -47,6 +56,8 @@ window.addEventListener('keydown', function (keyEvent) {
             if (countF >= 10)
             {countF = 0;
             reset = true;}
+            count = countF;
+            moveDown(reset,letter,count);
             break;
             break;
 
@@ -56,6 +67,8 @@ window.addEventListener('keydown', function (keyEvent) {
             if (countG >= 10)
             {countG = 0;
             reset = true;}
+            count = countG;
+            moveDown(reset,letter,count);
             break;
 
         case 72:
@@ -63,7 +76,8 @@ window.addEventListener('keydown', function (keyEvent) {
             if (countH >= 10)
             {countH = 0;
             reset = true;}
-            counter.innerHTML = countH;
+            count = countH;
+            moveDown(reset,letter,count);
             break;
 
         case 74:
@@ -72,14 +86,17 @@ window.addEventListener('keydown', function (keyEvent) {
             if (countJ >= 10)
             {countJ = 0;
             reset = true;}
+            count = countJ;
+            moveDown(reset,letter,count);
             break;
 
         case 75:
             countK++;
-            counter.innerHTML = countK;
             if (countK >= 10)
             {countK = 0;
             reset = true;}
+            count = countK;
+            moveDown(reset,letter,count);
             break;
         case 76:
                 countL++;
@@ -87,10 +104,12 @@ window.addEventListener('keydown', function (keyEvent) {
                 if (countL >= 10)
                 {countL = 0;
                 reset = true;}
+                count = countL;
+                moveDown(reset,letter,count);
                 break;
     }
 
-     moveDown(reset,letter);
+     
 
 });
 
@@ -101,10 +120,11 @@ function removeClass(e) {
 
 }
 
-function moveDown(reset,letter)
+function moveDown(reset,letter,count)
 {
     console.log(reset);
     letter.classList.add('movedown');
+    letter.style.top = (10*count)+"px";
 
     if(reset == true)
     {
