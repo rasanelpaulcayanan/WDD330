@@ -1,4 +1,4 @@
-let baseUrl = 'https://www.thesportsdb.com/api/v1/json/1/searchteams.php?t=Los_Angeles_Lakers';
+let baseUrl = 'https://www.thesportsdb.com/api/v1/json/1/searchplayers.php?p=%20Welbeck';
 
 function showCharacters(baseUrl)
 {
@@ -10,5 +10,3 @@ console.log(json);
 }
 
 showCharacters(baseUrl);
-
-"Los Angeles Lakers"
