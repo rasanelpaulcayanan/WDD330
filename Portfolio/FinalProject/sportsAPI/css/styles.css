@@ -1,10 +1,274 @@
 body
 {
 
-    background: url("../images/background.jpg");
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+
+}
+
+.basketballContainer
+{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/nba-stadium.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Goldman', cursive;  
+    
+}
+
+.soccerContainer
+{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/soccer-stadium.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Goldman', cursive;  
+}
+
+.footballContainer
+{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/football-stadium.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Goldman', cursive;   
+}
+
+.nflContainer
+{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/football-stadium.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Goldman', cursive;  
+}
+
+.rugbyContainer
+{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/rugby-stadium.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Goldman', cursive;  
+
+}
+
+.soccerContainer
+{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/soccer-stadium.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Goldman', cursive;  
+   
+}
+.apiDiv
+{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/football-stadium.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Goldman', cursive;
+    transition: 1s;
+   
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running ;
+    animation-timing-function: ease-in;
+}
+
+@keyframes animate
+{
+    0% {
+        background-image: url(../images/rugby-stadium.jpg);
+    }
+
+  
+    50%
+    {
+        background-image: url(../images/soccer-stadium.jpg); 
+    }
+
+    75% {
+        background-image: url(../images/nba-stadium.jpg);
+    }
+
+  
+}
+
+
+#basketballBody
+{
+
+    background: url("../images/nba.jpg");
+    size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
-    color: white;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Goldman', cursive;
+    
+}
 
+#nflBody
+{
+
+    background: url("../images/nfl.jpg");
+    height: 90%;
+    width: 90%;
+    size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Goldman', cursive;
+    
+}
+
+h1,h2,h3
+{
+    background: #0575E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+    font-size: 1.6rem;
+
+}
+
+.container
+{
+    position: absolute;
+    height: 15pc;
+    width: 50pc;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 200px;
+    /* backdrop-filter: blur(15px); */
+    background: #A1FFCE;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    box-shadow: 0 0 55px black;
+    text-align: center;
+}
+
+.selectorDiv
+{
+    position: absolute;
+    height: 35pc;
+    width: 20pc;
+    margin: auto;
+    top: 15%;
+    right: 75%;
+    left: 0;
+    bottom: 200px;
+    /* backdrop-filter: blur(15px); */
+    background: #A1FFCE;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    box-shadow: 0 0 55px black;
+    text-align: center;
+}
+.sportContainer
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0%;
+}
+
+.sport {
+    transition: all .2s ease-in-out;
+  
+    
+
+}
+
+.sport:hover {
+    transform: scale(1.2);
+}
+
+.icon
+{
+    width: 25px;
+    height: auto;
+}
+
+li
+{
+    list-style-type: none;
+}
+
+#detailsDiv
+{
+    position: absolute;
+    height: 40pc;
+    width: 40pc;
+    margin: auto;
+    top: 50%;
+    right: 0;
+    left: 200%;
+    bottom: 200px;
+    /* backdrop-filter: blur(15px); */
+    background: #A1FFCE;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+    box-shadow: 0 0 55px black;
+    text-align: center;
+    overflow: scroll;
+
+}
+
+.teamLogo
+{
+    width: 15%;
+    height: auto;
+    margin: auto;
+}
+
+img.teamLogo
+{
+    height: 100px;
+    width: auto;
+}
+
+#teamDescritption p
+{
+    font-size: .7rem;
+}
+
+ul.icons
+{
+
+    display: flex;
+    margin: auto;
+    
+}
+
+ul.icons img
+{
+    width: 50%;
+    height: auto;
 }

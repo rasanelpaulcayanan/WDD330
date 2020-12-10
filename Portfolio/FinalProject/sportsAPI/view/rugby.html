@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rugby API</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <div class="rugbyContainer">
+  
+      <div class="selectorDiv">
+        <h1>Sports API</h1>
+        
+        <h2>Select Country </h2>
+        <p><a href="api.html">Home</a></p>
+        
+        <select id="country">
+          <option>Select a Country</option>
+          <option value="1"> Australia</option>
+          <option value="2">England</option>
+          <option value="3">Worldwide</option>
+        </select>
+        
+        <div >
+          <select name="league" id="league">
+        <option>Select a League</option>
+          </select>
+        </div>
+        
+        <div>
+          <select name="team" id="team">
+            <option>Select a Team</option>
+          </select>
+  
+        </div>
+        <div id="detailsDiv">
+        <div id="teamLogo"></div>
+        <div id="arenaDetails"></div>
+        <div id="teamDescritption"></div>
+        <div id="socialMedia"></div>
+        
+        </div>
+        </div>
+        
+        </div>
+    
+  
+
+  <script src="../js/rugby.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  
+  <script>
+    WebFont.load({
+        google: {
+            families: [
+                'Goldman'
+            ]
+        }
+    });
+</script>
+
+</html>

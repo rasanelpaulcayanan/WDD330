@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basketball API</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+  <div class="basketballContainer">
+  
+    <div class="selectorDiv">
+<h1>Sports API</h1>
+
+<h2>Select Country </h2>
+<p><a href="api.html">Home</a></p>
+
+<select id="country">
+  <option>Select a Country</option>
+  <option value="1"> England</option>
+  <option value="2">United States</option>
+  <option value="3">Australia</option>
+</select>
+
+<div >
+  <select name="league" id="league">
+<option>Select a League</option>
+  </select>
+</div>
+
+<div>
+  <select name="team" id="team">
+    <option>Select a Team</option>
+  </select>
+</div>
+<div id="detailsDiv">
+<h1>Basketball API</h1>
+<div id="teamLogo"></div>
+<div id="arenaDetails"></div>
+<div id="teamDescritption"></div>
+<div id="socialMedia"></div>
+
+</div>
+</div>
+
+</div>
+  
+
+  <script src="../js/basketball.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  
+  <script>
+    WebFont.load({
+        google: {
+            families: [
+                'Goldman'
+            ]
+        }
+    });
+</script>
+
+</html>
