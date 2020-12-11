@@ -82,7 +82,7 @@ let socialMedia = document.getElementById('socialMedia');
 logo.innerHTML = "<img class='teamLogo' src='"  + teamInfo[teamValue].strTeamLogo+"'>";
 arenaDetails.innerHTML ="<p>Arena Name:"+teamInfo[teamValue].strStadium +"</p><p>Year Formed:"+teamInfo[teamValue].intFormedYear+ "</p>";
 description.innerHTML = "<p>"+ teamInfo[teamValue].strDescriptionEN+ "</p>";
-socialMedia.innerHTML= "<ul class='icons'><li><a href='https://"+teamInfo[teamValue].strWebsite+"' target='blank'><img src='../images/facebook.png'></img></a></li> <li><a href='https://"+teamInfo[teamValue].strTwitter+"' target='blank'><img src='../images/twitter.png'></img></a></li> <li><a href='https://"+teamInfo[teamValue].strYoutube+"'><img src='../images/youtube.png' target='blank'></img></a></li><ul>"
+socialMedia.innerHTML= "<ul class='icons'><li><a href='https://"+teamInfo[teamValue].strWebsite+"' target='blank'><img src='../images/website.png'></img></a></li> <li><a href='https://"+teamInfo[teamValue].strTwitter+"' target='blank'><img src='../images/twitter.png'></img></a></li> <li><a href='https://"+teamInfo[teamValue].strYoutube+"'><img src='../images/youtube.png' target='blank'></img></a></li><ul>"
 
 
 }
